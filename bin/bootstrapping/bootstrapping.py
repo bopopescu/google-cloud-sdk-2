@@ -56,7 +56,7 @@ SDK_ROOT = os.path.dirname(BIN_DIR)
 
 
 def DisallowPython3():
-  if not platforms.PythonVersion().IsCompatible(allow_py3=False):
+  if not platforms.PythonVersion().IsCompatible():
     sys.exit(1)
 
 
